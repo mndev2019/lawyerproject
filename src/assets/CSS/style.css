@@ -145,6 +145,77 @@
   /* display: none !important; */
   opacity: 0;
 }
+
+
+/* Blogs */
+
+.banner-area {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 456px;
+  position: relative;
+  opacity: 1; /* Ensure opacity is 1 for clarity */
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+}
+
+.banner-area .overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; /* Ensure overlay is below content */
+}
+
+.container-one {
+  position: relative;
+  z-index: 2; /* Ensure content is above overlay */
+  text-align: center; /* Center text horizontally */
+}
+
+.banner-wrapper {
+  position: relative;
+}
+
+.banner-content {
+  z-index: 2; /* Ensure text is above the overlay */
+  padding: 20px; /* Optional padding */
+}
+
+.banner-content h1,
+.banner-content ul,
+.banner-content a {
+  color: #fff; /* Ensure text is white */
+  margin: 0;
+  padding: 0; /* Remove default margins and padding */
+}
+
+.blog-area{
+  background-color: white;
+}
+.blog-card{
+  background-color: var(--text-dark) !important;
+  
+}
+
+/* contact */
+
+.info{
+  background-color: white !important;
+}
+.contact-info-card .card-content .card-item {
+  padding: 60px;
+  /* background-color: var(--main-secondary); */
+  background-color: var(--text-dark) !important;
+ 
+}
+
+/* blogs counter */
+
+
 /*footer
   background: #f0f3f6 url(//www.duaassociates.com/wp-content/themes/dua/images/footerlogo.png) 150% bottom no-repeat;
   padding: 120px 0 0; */

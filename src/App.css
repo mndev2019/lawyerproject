@@ -3472,7 +3472,7 @@ BANNER CSS
   width: 100%;
   height: 100%;
   opacity: 0.9;
-  background-color: #0C1A1A;
+  
   content: "";
 }
 .banner-wrapper::after {

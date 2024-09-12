@@ -16,7 +16,7 @@ const ThemeNavbar = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">Home</a>
+                  <a className="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link active" aria-current="page" href="#">Services</a>
@@ -27,13 +27,11 @@ const ThemeNavbar = () => {
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">Blog</a>
+                  <a className="nav-link active" aria-current="page" href="/blogs">Blog</a>
                 </li>
+               
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">Shop</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">Contact</a>
+                  <a className="nav-link active" aria-current="page" href="/contact">Contact</a>
                 </li>
               </ul>
 
