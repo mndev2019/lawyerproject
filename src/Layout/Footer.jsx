@@ -56,10 +56,10 @@ const Footer = () => {
                 </div>
 
                 {/* Shape */}
-                <img className="footer-shape-1 moveBottom" src="images/footer-shape-1.png" alt="Shape" />
+                {/* <img className="footer-shape-1 moveBottom" src="images/footer-shape-1.png" alt="Shape" />
                 <img className="footer-shape-2" src="images/footer-shape-2.png" alt="Shape" />
                 <img className="footer-shape-3" src="images/footer-shape-3.png" alt="Shape" />
-                <img className="footer-shape-4 moveBottom" src="images/footer-shape-4.png" alt="Shape" />
+                <img className="footer-shape-4 moveBottom" src="images/footer-shape-4.png" alt="Shape" /> */}
             </footer>
         </>
     )

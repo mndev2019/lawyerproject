@@ -15,7 +15,7 @@ const MoreServices = () => {
             title: "Business Law",
             description: "Maecenas efficitur neque posu rutrum justo vel, placerat.",
             link: "service-detail.html",
-           
+
             delay: 0.2
         },
         {
@@ -23,7 +23,7 @@ const MoreServices = () => {
             title: "Education Law",
             description: "Maecenas efficitur neque posu rutrum justo vel, placerat.",
             link: "service-detail.html",
-           
+
             delay: 0.4
         },
         {
@@ -31,7 +31,7 @@ const MoreServices = () => {
             title: "Family Law",
             description: "Maecenas efficitur neque posu rutrum justo vel, placerat.",
             link: "service-detail.html",
-          
+
             delay: 0.6
         },
         {
@@ -39,7 +39,7 @@ const MoreServices = () => {
             title: "Insurance Defense",
             description: "Maecenas efficitur neque posu rutrum justo vel, placerat.",
             link: "service-detail.html",
-           
+
             delay: 0.8
         },
         {
@@ -47,7 +47,7 @@ const MoreServices = () => {
             title: "Divorce Law",
             description: "Maecenas efficitur neque posu rutrum justo vel, placerat.",
             link: "service-detail.html",
-           
+
             delay: 0.2
         },
         {
@@ -55,14 +55,14 @@ const MoreServices = () => {
             title: "Car Accidents Law",
             description: "Maecenas efficitur neque posu rutrum justo vel, placerat.",
             link: "service-detail.html",
-          
+
             delay: 0.4
         },
         {
             imgSrc: imgsrc6,
             title: "Child Crime Law",
             description: "Maecenas efficitur neque posu rutrum justo vel, placerat.",
-           
+
             delay: 0.6
         },
         {
@@ -70,13 +70,13 @@ const MoreServices = () => {
             title: "Health Care Law",
             description: "Maecenas efficitur neque posu rutrum justo vel, placerat.",
             link: "service-detail.html",
-           
+
             delay: 0.8
         }
     ];
     return (
         <>
-            <section className="service-area-4 pt-150 pb-150 position-relative ">
+            <section className="service-area-4 moreservices pt-150 pb-150 position-relative ">
                 <div className="container">
                     <div className="service-topwrap-3 text-center pb-50">
                         <span className="section-subtitle pb-10 fade-slide top" data-delay="0.2">Our Best Of Service</span>
@@ -94,8 +94,8 @@ const MoreServices = () => {
                                                 </div>
                                             </div>
                                             <h3><a className="service-title-4" href="service-detail.html">{itm.title}</a></h3>
-                                            <p className="service-text-4description">{itm.description}</p>
-                                          
+                                            <p className="service-text-4description text-dark text-center">{itm.description}</p>
+
                                         </div>
                                     </div>
                                 </>

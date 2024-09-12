@@ -29,9 +29,9 @@ const ThemeNavbar = () => {
                 <li className="nav-item">
                   <a className="nav-link active" aria-current="page" href="#">Blog</a>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <a className="nav-link active" aria-current="page" href="#">Shop</a>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <a className="nav-link active" aria-current="page" href="#">Contact</a>
                 </li>
