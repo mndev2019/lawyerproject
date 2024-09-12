@@ -1,0 +1,150 @@
+/*navbar */
+.logo {
+  height: 100px;
+}
+
+.header .navbar .nav-link {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* practisearea 
+.practisearea .leftcol {
+  width: 33%;
+  float: left;
+  background: white;
+  padding: 50px 0;
+  position: relative;
+  z-index: 9;
+  margin: 100px 0 150px;
+  max-height: 550px;
+  overflow-y: auto;
+  margin-left: 72px;
+}
+
+.practisearea .leftcol ul li {
+  cursor: pointer;
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+  position: relative;
+}
+
+.practisearea .rightcol {
+  background-image: url('../images/practicarea1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+.practisearea .practisetext{
+  width: 70%;
+  margin: 100px 0 0 5%;
+  float: left;
+  position: relative;
+  z-index: 2;
+  padding: 50px;
+  background: rgba(0, 0, 0, .3);
+}
+.practisearea .practicetitle {
+  
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: 30px;
+  
+  
+}
+.practisearea .practicesubtitle{
+  color: #ffffff;
+  margin-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19px;
+  line-height: 1.5;
+}*/
+
+.practisearea .leftcol {
+  width: 33%;
+  float: left;
+  background: white;
+  padding: 50px 0;
+  position: relative;
+  z-index: 9;
+  margin: 100px 0 150px;
+  max-height: 550px;
+  overflow-y: auto;
+  margin-left: 72px;
+}
+
+.practisearea .leftcol ul li {
+  cursor: pointer;
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+  position: relative;
+}
+
+.practisearea .rightcol {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+.practisearea .practisetext {
+  width: 70%;
+  margin: 100px 0 0 5%;
+  float: left;
+  position: relative;
+  z-index: 2;
+  padding: 50px;
+  background: rgba(0, 0, 0, .3);
+}
+.practisearea .practicetitle {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.practisearea .practicesubtitle {
+  color: #ffffff;
+  margin-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19px;
+  line-height: 1.5;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color:var(--text-dark);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-dark);
+}
+/* slider button */
+.slick-dots li button {
+  /* display: none !important; */
+  opacity: 0;
+}
+/*footer
+  background: #f0f3f6 url(//www.duaassociates.com/wp-content/themes/dua/images/footerlogo.png) 150% bottom no-repeat;
+  padding: 120px 0 0; */
