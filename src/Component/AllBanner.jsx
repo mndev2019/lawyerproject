@@ -15,7 +15,7 @@ const AllBanner = (props) => {
                 <div className="container overflow-hidden">
                     <div className="banner-wrapper">
                         <div className="banner-content">
-                            <h1 className="section-title-lg mb-10 fade-slide bottom" data-delay="0.2">
+                            <h1 className="section-title-lg mb-10 fade-slide bottom banner-area-heading" data-delay="0.2">
                                 {props.title}
                             </h1>
                             <ul className="breadcrumbs-list fade-slide bottom pt-2" data-delay="0.4">

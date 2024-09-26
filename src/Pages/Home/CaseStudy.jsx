@@ -2,7 +2,6 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import arrowyellow from '../../assets/images/arrow-top-yellow.svg'
 import arrowblack from '../../assets/images/arrow-top-black.svg'
 import slider1 from '../../assets/images/s-slide-1.png'
 import slider2 from '../../assets/images/s-slide-2.png'
@@ -17,31 +16,52 @@ import shape2 from '../../assets/images/about-shape-4.png'
 import shape3 from '../../assets/images/about-shape-3.png'
 const CaseStudy = () => {
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
-        speed: 500,
-        slidesToShow: 4,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "linear",
+        slidesToShow: 4,  // Show 3 slides in a row
         slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024, // For tablets and medium screens
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768, // For mobile screens in landscape
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 480, // For small mobile screens
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     };
     return (
         <>
-            <section className="case-study-area-2 pb-150">
+            <section className="case-study-area-2 pb-150 pt-150 casestudy">
                 <div className="container">
-                    <div className="case-study-top-2 pb-50">
-                        <div className="case-study-topitem fade-slide left" data-delay="0.2">
-                            <span className="section-subtitle">Latest Best case study</span>
-                            <h2 className="section-title section-titleblue">The Works Check <span className="title-yellow">Our Case study</span></h2>
+                    <div className="row">
+                        <div className="col-md-12" >
+                            <span className="title roboto">Latest Best case study</span>
+                            <h2 className="subtitle roboto">The Works Check <span className="bluecolor">Our Case study</span></h2>
                         </div>
-                        <div className="case-study-topitem fade-slide right" data-delay="0.4">
-                            <a href="contact.html" className="btn-fill gap-2 d-flex align-items-center">
-                                All Case Study
-                                <img className="btn-icon-black" src={arrowyellow} alt="Icon" />
-                            </a>
-                        </div>
+                       
                     </div>
                 </div>
                 {/* Slider */}
-                <div className="case-study-slider">
+                <div className="case-study-slider pt-5">
                     <Slider {...settings}>
                         <div>
                             <div className="case-study-item-2">
@@ -49,7 +69,7 @@ const CaseStudy = () => {
                                     <img src={case1} alt="Image" />
                                     <div className="case-study-content-2">
                                         <img src={slider1} />
-                                        <h3><a className="case-study-title-2" href="case-detail.html">Criminal Defense</a></h3>
+                                        <h3><a className="case-study-title-2 roboto" href="case-detail.html">Criminal Defense</a></h3>
                                     </div>
                                     <a href="case-detail.html" className="case-study-icon-2">
                                         <img src={arrowblack} />
@@ -63,7 +83,7 @@ const CaseStudy = () => {
                                     <img src={case2} />
                                     <div className="case-study-content-2">
                                         <img src={slider2} />
-                                        <h3><a className="case-study-title-2" href="case-detail.html">Contract Review</a></h3>
+                                        <h3><a className="case-study-title-2 roboto" href="case-detail.html">Contract Review</a></h3>
                                     </div>
                                     <a href="case-detail.html" className="case-study-icon-2">
                                         <img src={arrowblack} />
@@ -78,7 +98,7 @@ const CaseStudy = () => {
                                     <img src={case3} />
                                     <div className="case-study-content-2">
                                         <img src={slider3} />
-                                        <h3><a className="case-study-title-2" href="case-detail.html">Immigration Issues</a></h3>
+                                        <h3><a className="case-study-title-2 roboto" href="case-detail.html">Immigration Issues</a></h3>
                                     </div>
                                     <a href="case-detail.html" className="case-study-icon-2">
                                         <img src={arrowblack} />
@@ -91,8 +111,8 @@ const CaseStudy = () => {
                                 <div className="case-study-img-2">
                                     <img src={case4} />
                                     <div className="case-study-content-2">
-                                        <img src={slider4 } />
-                                        <h3><a className="case-study-title-2" href="case-detail.html">Business law</a></h3>
+                                        <img src={slider4} />
+                                        <h3><a className="case-study-title-2 roboto" href="case-detail.html">Business law</a></h3>
                                     </div>
                                     <a href="case-detail.html" className="case-study-icon-2">
                                         <img src={arrowblack} />
@@ -103,10 +123,10 @@ const CaseStudy = () => {
                         <div>
                             <div className="case-study-item-2">
                                 <div className="case-study-img-2">
-                                    <img src={case3}/>
+                                    <img src={case3} />
                                     <div className="case-study-content-2">
                                         <img src={slider1} />
-                                        <h3><a className="case-study-title-2" href="case-detail.html">Immigration Issues</a></h3>
+                                        <h3><a className="case-study-title-2 roboto" href="case-detail.html">Immigration Issues</a></h3>
                                     </div>
                                     <a href="case-detail.html" className="case-study-icon-2">
                                         <img src={arrowblack} />

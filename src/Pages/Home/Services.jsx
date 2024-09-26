@@ -5,31 +5,54 @@ import servicecard3 from '../../assets/images/card-img-3.webp'
 import services2 from '../../assets/images/h3-icon-2.svg'
 import services3 from '../../assets/images/arrow-top-dark.svg'
 import services4 from '../../assets/images/h3-icon-1.svg'
-import shape from '../../assets/images/circle-shape-yellow.png'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const Services = () => {
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
-        speed: 500,
-        slidesToShow: 2,
-        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "linear",
         arrows:false,
+        slidesToShow: 2,  // Show 2 slides in a row
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024, // For tablets and medium screens
+                settings: {
+                    slidesToShow: 1, // Show 2 slides at a time on tablet
+                }
+            },
+            {
+                breakpoint: 768, // For mobile screens in landscape mode
+                settings: {
+                    slidesToShow: 1, // Show 1 slide at a time on mobile landscape
+                }
+            },
+            {
+                breakpoint: 480, // For small mobile screens
+                settings: {
+                    slidesToShow: 1, // Show 1 slide at a time on small devices
+                }
+            }
+        ]
     };
     return (
         <>
-            <section className="service-area-3 pt-150 pb-150 position-relative">
+            <section className="service-area-3 pt-150 pb-150 position-relative aboutus">
                 <div className="container">
-                    <div className="row">
+                    <div className="row align-items-center">
                         <div className="col-xl-4 col-lg-4 col-md-12">
-                            <div className="service-left-4">
-                                <span className="section-subtitle pb-20 fade-slide top" data-delay="0.2">Our Best Of Service</span>
-                                <h2 className="section-title mb-20 fade-slide bottom" data-delay="0.4">What People Says Our Best Of <span className="title-yellow">Legal Practice Areas</span></h2>
-                                <div className="fade-slide bottom" data-delay="0.6">
-                                    <p className="service-content-3">Morbi posuere interdum viverra. Vivamus feugiat hendrerit nulla vitae finibus. Nam in viverra neque. Maecenas fermentum vehicula mauris.</p>
+                            <div className="service-left-4 text-start">
+                                <span className="title roboto">About us</span>
+                                <h2 className="subtitle roboto py-3" >It is always better to know the credentials <span className="bluecolor">of your attorney</span></h2>
+                                <div >
+                                    <p className="roboto py-3">In addition to our key areas of practice, LACCO Legal believes, that every human being deserves to be respected, and thus, being in this Nobel profession, LACCO Legal aims to provide pro – bono services to the one who are deprived of their human rights.</p>
+                                    <p className="roboto pb-3">Our services cover a wide range of industry areas such as Financial Services, Power, Telecom, Insurance, Consumer Durables, IT, Media, Transport, Energy, Infrastructure, Environment, and Agricultural.</p>
                                 </div>
                             </div>
                         </div>
@@ -43,8 +66,8 @@ const Services = () => {
                                                 <div className="service-iconwrap-3">
                                                     <img src={services2} alt="Criminal" />
                                                 </div>
-                                                <h3><a className="service-title-3" href="case-detail.html">Dui Defense Law</a></h3>
-                                                <a href="case-detail.html" className="service-btn-3">Case Details
+                                                <h3 className='text-start roboto'><a className="service-title-3" href="case-detail.html">Dui Defense Law</a></h3>
+                                                <a href="case-detail.html" className="service-btn-3 roboto">Case Details
                                                     <img className="service-icon-3" src={services3} alt="Icon" />
                                                 </a>
                                             </div>
@@ -57,8 +80,8 @@ const Services = () => {
                                                 <div className="service-iconwrap-3">
                                                     <img src={services4} alt="Criminal" />
                                                 </div>
-                                                <h3><a className="service-title-3" href="case-detail.html">Personal Injury Law</a></h3>
-                                                <a href="case-detail.html" className="service-btn-3">Case Details
+                                                <h3 className='text-start roboto'><a className="service-title-3" href="case-detail.html">Personal Injury Law</a></h3>
+                                                <a href="case-detail.html" className="service-btn-3 roboto">Case Details
                                                     <img className="service-icon-3" src={services3} alt="Icon" />
                                                 </a>
                                             </div>
@@ -71,14 +94,14 @@ const Services = () => {
                                                 <div className="service-iconwrap-3">
                                                     <img src={services2} alt="Criminal" />
                                                 </div>
-                                                <h3><a className="service-title-3" href="case-detail.html">Dui Defense Law</a></h3>
-                                                <a href="case-detail.html" className="service-btn-3">Case Details
+                                                <h3 className='text-start roboto'><a className="service-title-3" href="case-detail.html">Dui Defense Law</a></h3>
+                                                <a href="case-detail.html" className="service-btn-3 roboto">Case Details
                                                     <img className="service-icon-3" src={services3} alt="Icon" />
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </Slider>
 
 
@@ -87,8 +110,7 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
-                {/* Shape */}
-                <img className="service-shape-three-1 zoom-in-out" src={shape} alt="Shape" />
+               
             </section>
         </>
     )

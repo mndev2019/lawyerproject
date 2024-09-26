@@ -1,20 +1,25 @@
 //import React from 'react'
+import { ArrowRightOutlined } from '@ant-design/icons';
 import practisearea1 from '../../assets/images/practicarea1.jpg'
 import practisearea2 from '../../assets/images/practisearea2.jpg'
+
 
 import { useState } from "react";
 
 const Practisearea = () => {
-    const [selectedItem, setSelectedItem] = useState(1); // default selection
+    const [selectedItem, setSelectedItem] = useState(1);
+    // default selection
+
+
     const items = [
-        { id: 1, text: "Arbitration & Alternative Dispute Resolution", image: practisearea1 },
-        { id: 2, text: "Corporate Law", image: practisearea2 },
-        { id: 3, text: "Civil Litigation", image: "practicarea3.jpg" },
-        { id: 4, text: "Criminal Law", image: "practicarea4.jpg" },
-        { id: 5, text: "Employment Law", image: "practicarea5.jpg" },
-        { id: 6, text: "Environmental Law", image: "practicarea6.jpg" },
-        { id: 7, text: "Family Law", image: "practicarea7.jpg" },
-        { id: 8, text: "Immigration Law", image: "practicarea8.jpg" },
+        { id: 1, text: "Arbitration & Alternative Dispute Resolution", description: "Dua Associates’ Dispute Resolution practice involving civil, commercial, taxation, criminal and constitutional law, comprises of about twenty five partners and counsel supported by over fifty litigation lawyers is represented at all the eight locations where the Firm has offices.", image: practisearea1 },
+        { id: 2, text: "Corporate Law", image: practisearea2, description: "Dua Associates’ Dispute Resolution practice involving civil, commercial, taxation, criminal and constitutional law, comprises of about twenty five partners and counsel supported by over fifty litigation lawyers is represented at all the eight locations where the Firm has offices." },
+        { id: 3, text: "Civil Litigation", image: practisearea1, description: "Dua Associates’ Dispute Resolution practice involving civil, commercial, taxation, criminal and constitutional law, comprises of about twenty five partners and counsel supported by over fifty litigation lawyers is represented at all the eight locations where the Firm has offices." },
+        { id: 4, text: "Criminal Law", image: practisearea2, description: "Dua Associates’ Dispute Resolution practice involving civil, commercial, taxation, criminal and constitutional law, comprises of about twenty five partners and counsel supported by over fifty litigation lawyers is represented at all the eight locations where the Firm has offices." },
+        { id: 5, text: "Employment Law", image: practisearea1, description: "Dua Associates’ Dispute Resolution practice involving civil, commercial, taxation, criminal and constitutional law, comprises of about twenty five partners and counsel supported by over fifty litigation lawyers is represented at all the eight locations where the Firm has offices." },
+        { id: 6, text: "Environmental Law", image: practisearea2, description: "Dua Associates’ Dispute Resolution practice involving civil, commercial, taxation, criminal and constitutional law, comprises of about twenty five partners and counsel supported by over fifty litigation lawyers is represented at all the eight locations where the Firm has offices." },
+        { id: 7, text: "Family Law", image: "practicarea7.jpg", description: "Dua Associates’ Dispute Resolution practice involving civil, commercial, taxation, criminal and constitutional law, comprises of about twenty five partners and counsel supported by over fifty litigation lawyers is represented at all the eight locations where the Firm has offices." },
+        { id: 8, text: "Immigration Law", image: practisearea1, description: "Dua Associates’ Dispute Resolution practice involving civil, commercial, taxation, criminal and constitutional law, comprises of about twenty five partners and counsel supported by over fifty litigation lawyers is represented at all the eight locations where the Firm has offices." },
         { id: 9, text: "Intellectual Property Law", image: "practicarea9.jpg" },
         { id: 10, text: "Media Law", image: "practicarea10.jpg" },
         { id: 11, text: "Real Estate Law", image: "practicarea11.jpg" },
@@ -23,16 +28,17 @@ const Practisearea = () => {
         { id: 14, text: "Technology Law", image: "practicarea14.jpg" },
         { id: 15, text: "Trusts and Estates", image: "practicarea15.jpg" }
     ];
+
     return (
         <>
-            <section className="service-area-4 practisearea">
+            <section className="service-area-4 pt-150 pb-150 practisearea">
                 <div className="container">
-                    <div className="service-topwrap-3 text-center pb-50">
-                        <span className="section-subtitle pb-10 fade-slide top" data-delay="0.2">
+                    <div className="service-topwrap-3 text-center">
+                        <span className="roboto title shadow" >
                             Our Best Of Service
                         </span>
-                        <h2 className="section-title fade-slide bottom" data-delay="0.4">
-                            What People Say About Our Best Of <span className="title-yellow"> Legal Practice Areas </span>
+                        <h2 className="subtitle roboto">
+                            What People Say About Our Best Of <span className=" d-block"> Legal Practice Areas </span>
                         </h2>
                     </div>
                     <div className="row align-items-center justify-content-center">
@@ -42,10 +48,11 @@ const Practisearea = () => {
                                     {items.map(item => (
                                         <li
                                             key={item.id}
-                                            className={`mb-3 ${selectedItem === item.id ? 'active' : ''}`}
+                                            className={`mb-3 p-2 roboto ${selectedItem === item.id ? 'active' : ''}`} 
                                             onClick={() => setSelectedItem(item.id)}
                                             style={{ cursor: 'pointer' }}
                                         >
+
                                             {item.text}
                                         </li>
                                     ))}
@@ -54,14 +61,28 @@ const Practisearea = () => {
                         </div>
 
                         <div className="col-md-8">
-                            <div className="w-100 rightcol"
-                                style={{ backgroundImage: `url(${items.find(item => item.id === selectedItem).image})` }}>
-                                <div className="practisetext">
-                                    <h2 className="practicetitle">{items.find(item => item.id === selectedItem).text}</h2>
-                                    <p className="practiseareasubtitle">
-                                        Description for {items.find(item => item.id === selectedItem).text}.
-                                    </p>
-                                </div>
+
+                            <div
+                                className="w-100 rightcol position-relative"
+                                style={{ backgroundImage: `url(${items.find(item => item.id === selectedItem)?.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                            >
+                                {
+                                    items.find(item => item.id) && (
+                                        <>
+                                            <div className="practisetext position-relative">
+                                                <h2 className="practicetitle animate__animated animate__bounce roboto">
+                                                    {items.find(item => item.id === selectedItem).text}
+                                                </h2>
+                                                <p className="practiseareasubtitle roboto text-white">
+                                                    {items.find(item => item.id === selectedItem).description}
+                                                </p>
+                                                <div className='practisetextcircle mt-2'>
+                                                    <ArrowRightOutlined/>
+                                                </div>
+                                            </div>
+                                        </>
+                                    )
+                                }
                             </div>
                         </div>
                     </div>

@@ -18,8 +18,8 @@ ANIMATION CSS
   --orange-light:#FFCD70;
   --white: #ffffff;
   --gradient-yellow: linear-gradient(125deg, #D89A26 14.31%, #FFCD70 86.5%);
-  --font-family-cormorant:"Cormorant Garamond", serif;
-  --font-family-manrope:"Manrope", sans-serif;
+  /* --font-family-cormorant:"Cormorant Garamond", serif;
+  --font-family-manrope:"Manrope", sans-serif; */
   --transition: all 0.5s ease-out;
 }
 .whitebg{
@@ -485,7 +485,7 @@ SPACE CSS
 }
 
 .pt-140 {
-  padding-top: 140px;
+  padding-top: 100px;
 }
 @media only screen and (max-width: 1199px) {
   .pt-140 {
@@ -504,7 +504,7 @@ SPACE CSS
 }
 
 .pt-150 {
-  padding-top: 150px;
+  padding-top: 100px;
 }
 @media only screen and (max-width: 1199px) {
   .pt-150 {
@@ -618,7 +618,7 @@ SPACE CSS
 }
 
 .pb-150 {
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 }
 @media only screen and (max-width: 1199px) {
   .pb-150 {
@@ -1710,7 +1710,7 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   font-family: var(--font-family-manrope);
-  background-color: var(--text-dark);
+  background-color:transparent;
   font-size: 1.2rem;
   color: var(--main-primary);
   line-height: 1.5;
@@ -8509,7 +8509,7 @@ CASE STUDY CSS
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  background: linear-gradient(125deg, #D89A26 14.31%, #FFCD70 86.5%);
+ 
   position: absolute;
   top: 42%;
   left: 43%;
@@ -11913,5 +11913,3 @@ FOOTER CSS
 .footer-area-5 .footer-subtitle {
   padding-bottom: 10px;
 }
-
-/*# sourceMappingURL=style.css.map */

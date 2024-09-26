@@ -1,28 +1,29 @@
 //import React from 'react'
-import banner1 from '../../assets/images/arrow-top-black.svg'
-import banner2 from '../../assets/images/arrow-top-yellow.svg'
+//import banner1 from '../../assets/images/arrow-top-black.svg'
+//import banner2 from '../../assets/images/arrow-top-yellow.svg'
 //import banner3 from '../../assets/images/logo-two-small.png'
 //import banner4 from '../../assets/images/h-shape-three-1.png'
 //import banner5 from '../../assets/images/h-shape-three-2.png'
 //import banner6 from '../../assets/images/p-two-shape-1.png'
 //import phone from '../../assets/images/phone-plus-yellow.svg'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+//import "slick-carousel/slick/slick.css";
+//import "slick-carousel/slick/slick-theme.css";
+//import Slider from "react-slick";
+import bannercircle from '../../assets/images/bannercircle.svg'
 
 
 const Banner = () => {
-    var settings = {
+    {/* var settings = {
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-    };
+    };*/}
     return (
         <>
-            <section className="hero-area-3 banner position-relative">
+            {/*  <section className="hero-area-3 banner position-relative">
                 <div className="container-xxl">
                     <div className="hero-content-3 text-center">
                         <div className="hero-content-slider">
@@ -83,22 +84,46 @@ const Banner = () => {
 
                         </div>
                     </div>
-                    {/* Circle */}
-                    
-                  {/*  <div className="hero-two-textwrap fade-slide top" data-delay="0.6">
-                        <p className="hero-text-left">we are the best Our law firm</p>
+
+                </div >
+
+            </section >*/}
+            <section className="banner  d-flex align-items-center justify-content-center space position-relative">
+                <img src={bannercircle} alt="image" className='position-absolute bannercircle' />
+                <div className="container">
+                    <div className="row pb-5">
+                        {/* <div className="col-md-3 flex justify-center">
+                            <div className="w-100 flex align-items-center justify-">
+                                <h3 className="roboto">SIDLEY</h3>
+                                <ul className="menu-list flex flex-col items-center space-y-4">
+                                    <li><a href="#">People</a></li>
+                                    <li><a href="#">Services and Industries</a></li>
+                                    <li><a href="#">Insights</a></li>
+                                    <li><a href="#">Our Story</a></li>
+                                </ul>
+                            </div>
+                        </div>*/}
+                        <div className="col-md-6">
+                            <div className="w-100 leftcol">
+                                <h2 className="roboto ">
+                                    Talent.
+                                    Teamwork.
+                                    Results.
+                                </h2>
+                            </div>
+                        </div>
+                        <div className="col-md-6 position-relative rightcol ">
+                            <div className="collast p-5 text-start">
+                                <p className="parahead roboto">
+                                    Announcements
+                                </p>
+                                <h2 className='roboto'>
+                                    Sidley Represents Long-Time Client Angel City Football Club in Its Definitive Agreement with Willow Bay and Bob Iger to Become the New Controlling Owners of the World’s Most Valuable Women’s Professional Sports Team
+                                </h2>
+                            </div>
+                        </div>
                     </div>
-                    <div className="hero-two-contact fade-slide top" data-delay="0.8">
-                        <span className="hero-two-phone">
-                            <img src={phone} alt="Icon" />
-                        </span>
-                        <a className="hero-contact-link" href="tel:+12223334455">+ 1 222 333 44 55</a>
-                    </div>*/}
                 </div>
-                {/* Shape 
-                <img className="hero-shape-three-1 zoom-in-out" src={banner4} alt="Shape" />
-                <img className="hero-shape-three-2 zoom-in-out" src={banner5} alt="Shape" />
-                <img className="hero-shape-three-3" src={banner6} alt="Shape" />*/}
             </section>
         </>
     )
